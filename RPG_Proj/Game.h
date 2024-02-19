@@ -9,14 +9,14 @@ private:
 	Map map;
 	Player player;
 
+	int playerMoveDirection = 0;
+	const sf::Time TimePerFrame = sf::seconds(1.f / 10.f);
+
 	void processEvents();
-	void update();
+	void update(sf::Time deltaTime);
 	void render();
 
-	void handlePlayerInput(sf::Keyboard::Key key, bool isPressed);
-
-	bool mIsMovingUp = false, mIsMovingDown = false, mIsMovingLeft = false, mIsMovingRight = false;
-	const sf::Time TimePerFrame = sf::seconds(1.f / 60.f);
+	bool ActiveInventory = false;
 
 public:
 	Game();

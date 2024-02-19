@@ -1,8 +1,9 @@
 #include "Game.h"
+#include <Windows.h>
 
 Game::Game()
 	: window(sf::VideoMode(960, 640), "RPG game"),
-	player(),
+	player(sf::Vector2f(9*32, 6*32)),
 	map(960, 640)
 {
 
@@ -11,55 +12,94 @@ Game::Game()
 void Game::processEvents() {
 	sf::Event event;
 	while (window.pollEvent(event)) {
-		switch (event.type) {
-		case sf::Event::KeyPressed:
-			handlePlayerInput(event.key.code, true);
-			break;
-		case sf::Event::KeyReleased:
-			handlePlayerInput(event.key.code, false);
-			break;
-		case sf::Event::Closed:
+		if (event.type == sf::Event::Closed) {
 			window.close();
-			break;
+		}
+		
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+			playerMoveDirection = 1;
+		}
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+			playerMoveDirection = 2;
+		}
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+			playerMoveDirection = 3;
+		}
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+			playerMoveDirection = 4;
+		}
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::I)) {
+			ActiveInventory = true;
+		}
+
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+			ActiveInventory = false;
+		}
+
+		else {
+			playerMoveDirection = 0;
 		}
 	}
 }
 
-void Game::handlePlayerInput(sf::Keyboard::Key key, bool isPressed) {
-	if (key == sf::Keyboard::W)
-		mIsMovingUp = isPressed;
-	else if (key == sf::Keyboard::S)
-		mIsMovingDown = isPressed;
-	else if (key == sf::Keyboard::A)
-		mIsMovingLeft = isPressed;
-	else if (key == sf::Keyboard::D)
-		mIsMovingRight = isPressed;
-}
+void Game::update(sf::Time deltaTime) {
+	if (!ActiveInventory) {
+		sf::Vector2f pPos = player.getPosition();
 
-void Game::update() {
-	sf::Vector2f movement(0.f, 0.f);
-	if (mIsMovingUp)
-		movement.y -= 1.f;
-	if (mIsMovingDown)
-		movement.y += 1.f;
-	if (mIsMovingLeft)
-		movement.x -= 1.f;
-	if (mIsMovingRight)
-		movement.x += 1.f;
-	player.move(movement * TimePerFrame.asSeconds());
+		switch (playerMoveDirection) {
+		case 1:
+			if (map.getElementByPosition(pPos.x / 32, (pPos.y - 32) / 32) == 1)
+				player.move(1);
+			break;
+		case 2:
+			if (map.getElementByPosition((pPos.x + 32) / 32, pPos.y / 32) == 1)
+				player.move(2);
+			break;
+		case 3:
+			if (map.getElementByPosition(pPos.x / 32, (pPos.y + 32) / 32) == 1)
+				player.move(3);
+			break;
+		case 4:
+			if (map.getElementByPosition((pPos.x - 32) / 32, pPos.y / 32) == 1)
+				player.move(4);
+			break;
+		}
+
+		Sleep(deltaTime.asSeconds());
+	}
 }
 
 void Game::render() {
+
 	window.clear();
 	map.draw(window);
 	player.draw(window);
+
+	if (ActiveInventory) {
+		player.drawInventory(window); 
+	}
+
 	window.display();
 }
 
 void Game::run() {
+	sf::Clock clock;
+	sf::Time timeSinceLastUpdate = sf::Time::Zero;
+
 	while (window.isOpen()) {
 		processEvents();
-		update();
+		timeSinceLastUpdate += clock.restart();
+
+		while (timeSinceLastUpdate > TimePerFrame) {
+			timeSinceLastUpdate -= TimePerFrame;
+			processEvents();
+			update(TimePerFrame);
+		}
+
 		render();
 	}
 }

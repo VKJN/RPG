@@ -17,6 +17,10 @@ Map::Map(int width, int height)
 	}
 }
 
+int Map::getElementByPosition(int x, int y) {
+	return mask[y][x];
+}
+
 void Map::draw(sf::RenderWindow& window) {
 	window.draw(backgroundTile);
 	for (int i = 0; i < 20; i++) {
