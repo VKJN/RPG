@@ -5,14 +5,8 @@
 Player::Player(sf::Vector2f startPosition) {
 
 	if (!texture.loadFromFile("./Image/Player.png")) std::cout << "texture not load";
-	if (!inventoryTexture.loadFromFile("./Image/inventory.png")) std::cout << "texture not load";
 
 	player.setTexture(&texture);
-	inventory.setTexture(&inventoryTexture);
-
-	inventory.setSize(sf::Vector2f(256.f, 64.f));
-	inventory.setPosition(340, 400);
-
 	player.setSize(sf::Vector2f(32.f, 32.f));
 	player.setPosition(startPosition);
 }
@@ -37,10 +31,6 @@ void Player::move(int direction) {
 
 void Player::draw(sf::RenderWindow& window) {
 	window.draw(player);
-}
-
-void Player::drawInventory(sf::RenderWindow& window) {
-	window.draw(inventory);
 }
 
 sf::Vector2f Player::getPosition() {
