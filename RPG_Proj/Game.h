@@ -3,8 +3,11 @@
 #include "Player.h"
 #include "Inventory.h"
 #include "Map.h"
+
 #include "Item.h"
 #include "Chest.h"
+#include "Potion.h"
+#include "Coin.h"
 
 class Game {
 private:

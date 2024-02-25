@@ -8,9 +8,18 @@ Game::Game()
 	inventory(sf::Vector2f(11 * 32, 10 * 32))
 {
 	vector<vector<int>> coords = map.getArrayCoordsByNum(2);
-
 	for (auto el : coords) {
 		items.push_back(Chest(sf::Vector2f(el[1] * 32, el[0] * 32)));
+	}
+
+	coords = map.getArrayCoordsByNum(3);
+	for (auto el : coords) {
+		items.push_back(Coin(sf::Vector2f(el[1] * 32, el[0] * 32)));
+	}
+
+	coords = map.getArrayCoordsByNum(4);
+	for (auto el : coords) {
+		items.push_back(Potion(sf::Vector2f(el[1] * 32, el[0] * 32)));
 	}
 }
 
@@ -104,7 +113,6 @@ void Game::run() {
 			processEvents();
 			update(TimePerFrame);
 		}
-
 		render();
 	}
 }
