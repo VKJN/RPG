@@ -1,8 +1,10 @@
 #include "Chest.h"
 
+sf::Texture Chest::texture;
+
 Chest::Chest(sf::Vector2f startPosition) : 
 	Item(startPosition) {
 
-	itemTexture.loadFromFile("./Image/Chest.png");
-	item.setTexture(&itemTexture);
+	texture.loadFromFile("./Image/Chest.png");
+	item.setTexture(&texture);
 }

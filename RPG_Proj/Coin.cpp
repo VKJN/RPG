@@ -1,8 +1,10 @@
 #include "Coin.h"
 
+sf::Texture Coin::texture;
+
 Coin::Coin(sf::Vector2f startPosition) :
 	Item(startPosition) {
 
-	itemTexture.loadFromFile("./Image/Coin.png");
-	item.setTexture(&itemTexture);
+	texture.loadFromFile("./Image/Coin.png");
+	item.setTexture(&texture);
 }

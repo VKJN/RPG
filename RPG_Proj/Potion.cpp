@@ -1,8 +1,10 @@
 #include "Potion.h"
 
+sf::Texture Potion::texture;
+
 Potion::Potion(sf::Vector2f startPosition) :
 	Item(startPosition) {
 
-	itemTexture.loadFromFile("./Image/Potion.png");
-	item.setTexture(&itemTexture);
+	texture.loadFromFile("./Image/Potion1.png");
+	item.setTexture(&texture);
 }
