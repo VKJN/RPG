@@ -54,8 +54,58 @@ void Game::processEvents() {
 		case sf::Event::KeyReleased:
 			if (event.key.scancode == sf::Keyboard::Scan::I) {
 				inventory.changeVisible();
+				break;
 			}
-			break;
+			else if (event.key.scancode == sf::Keyboard::Scan::F) {
+				sf::Vector2f pPos = player.getPosition();
+				switch (lastFaced) {
+				case 1:
+					if (map.getElementByPosition(pPos.x / 32, (pPos.y - 32) / 32) > 1) {
+						for (int i = 0; i < items.size(); i++) {
+							if (items[i].getPosition().x == pPos.x && items[i].getPosition().y == pPos.y - 32) {
+								inventory.addItem(items[i]);
+								map.changeMask(items[i].getPosition().x / 32, items[i].getPosition().y / 32, 1);
+
+							}
+						}
+					}
+					break;
+
+				case 2:
+					if (map.getElementByPosition((pPos.x + 32) / 32, pPos.y / 32) > 1) {
+						for (int i = 0; i < items.size(); i++) {
+							if (items[i].getPosition().x == pPos.x + 32 && items[i].getPosition().y == pPos.y) {
+								inventory.addItem(items[i]);
+								map.changeMask(items[i].getPosition().x / 32, items[i].getPosition().y / 32, 1);
+							}
+						}
+					}
+					break;
+
+				case 3:
+					if (map.getElementByPosition(pPos.x / 32, (pPos.y + 32) / 32) > 1) {
+						for (int i = 0; i < items.size(); i++) {
+							if (items[i].getPosition().x == pPos.x && items[i].getPosition().y == pPos.y + 32) {
+								inventory.addItem(items[i]);
+								map.changeMask(items[i].getPosition().x / 32, items[i].getPosition().y / 32, 1);
+							}
+						}
+					}
+					break;
+
+				case 4:
+					if (map.getElementByPosition((pPos.x - 32) / 32, pPos.y / 32) > 1) {
+						for (int i = 0; i < items.size(); i++) {
+							if (items[i].getPosition().x == pPos.x - 32 && items[i].getPosition().y == pPos.y) {
+								inventory.addItem(items[i]);
+								map.changeMask(items[i].getPosition().x / 32, items[i].getPosition().y / 32, 1);
+							}
+						}
+					}
+					break;
+				}
+				break;
+			}
 		}
 	}
 }
@@ -80,6 +130,10 @@ void Game::update(sf::Time deltaTime) {
 		if (map.getElementByPosition((pPos.x - 32) / 32, pPos.y / 32) == 1)
 			player.move(4);
 		break;
+	}
+
+	if (playerMoveDirection != 0) {
+		lastFaced = playerMoveDirection;
 	}
 
 	Sleep(deltaTime.asSeconds());

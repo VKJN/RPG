@@ -19,6 +19,7 @@ private:
 
 	vector<Item> items;
 
+	int lastFaced = 0; // 1 - up; 2 - right; 3 - down; 4 - left
 	int playerMoveDirection = 0;
 	const sf::Time TimePerFrame = sf::seconds(1.f / 10.f);
 

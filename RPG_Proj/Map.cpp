@@ -44,3 +44,7 @@ vector<vector<int>> Map::getArrayCoordsByNum(int num) {
 	}
 	return coords;
 }
+
+void Map::changeMask(int x, int y, int value) {
+	mask[y][x] = value;
+}

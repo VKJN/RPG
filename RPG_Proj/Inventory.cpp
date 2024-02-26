@@ -25,9 +25,24 @@ void Inventory::draw(sf::RenderWindow& window) {
 		for (auto i : slots) {
 			window.draw(i);
 		}
+
+		for (auto item : items) {
+			item.draw(window);
+		}
 	}
 }
 
 void Inventory::changeVisible() {
 	visible = !visible;
+}
+
+void Inventory::addItem(Item item) {
+	items.push_back(item);
+	for (int i = 0; i < items.size(); i++) {
+		items[i].setPosition(sf::Vector2f(slots[i].getPosition().x + 8, slots[i].getPosition().y + 8));
+	}
+}
+
+void Inventory::removeItem(int index) {
+
 }

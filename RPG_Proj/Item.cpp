@@ -12,3 +12,7 @@ sf::Vector2f Item::getPosition() {
 void Item::draw(sf::RenderWindow& window) {
 	window.draw(item);
 }
+
+void Item::setPosition(sf::Vector2f newPosition) {
+	item.setPosition(newPosition);
+}

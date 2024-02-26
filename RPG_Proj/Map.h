@@ -34,4 +34,5 @@ public:
 	int getElementByPosition(int x, int y);
 	void draw(sf::RenderWindow& window);
 	vector<vector<int>> getArrayCoordsByNum(int num);
+	void changeMask(int x, int y, int value);
 };
