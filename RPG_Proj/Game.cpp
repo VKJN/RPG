@@ -65,7 +65,7 @@ void Game::processEvents() {
 							if (items[i].getPosition().x == pPos.x && items[i].getPosition().y == pPos.y - 32) {
 								inventory.addItem(items[i]);
 								map.changeMask(items[i].getPosition().x / 32, items[i].getPosition().y / 32, 1);
-
+								items.erase(items.begin() + i);
 							}
 						}
 					}
@@ -77,6 +77,7 @@ void Game::processEvents() {
 							if (items[i].getPosition().x == pPos.x + 32 && items[i].getPosition().y == pPos.y) {
 								inventory.addItem(items[i]);
 								map.changeMask(items[i].getPosition().x / 32, items[i].getPosition().y / 32, 1);
+								items.erase(items.begin() + i);
 							}
 						}
 					}
@@ -88,6 +89,7 @@ void Game::processEvents() {
 							if (items[i].getPosition().x == pPos.x && items[i].getPosition().y == pPos.y + 32) {
 								inventory.addItem(items[i]);
 								map.changeMask(items[i].getPosition().x / 32, items[i].getPosition().y / 32, 1);
+								items.erase(items.begin() + i);
 							}
 						}
 					}
@@ -99,6 +101,7 @@ void Game::processEvents() {
 							if (items[i].getPosition().x == pPos.x - 32 && items[i].getPosition().y == pPos.y) {
 								inventory.addItem(items[i]);
 								map.changeMask(items[i].getPosition().x / 32, items[i].getPosition().y / 32, 1);
+								items.erase(items.begin() + i);
 							}
 						}
 					}
