@@ -1,153 +1,196 @@
 ﻿  Game.cpp
-D:\C++\RPG\RPG_Proj\Game.cpp(12,56): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(12,56): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(12,56): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(12,56): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(12,56): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(12,44): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(12,44): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(12,44): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(12,44): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(12,44): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(17,55): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(17,55): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(17,55): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(17,55): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(17,55): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(17,43): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(17,43): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(17,43): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(17,43): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(17,43): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(22,57): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(22,57): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(22,57): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(22,57): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(22,57): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(22,45): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(22,45): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(22,45): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(22,45): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(22,45): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(63,62): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(63,62): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(63,62): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(63,62): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(63,62): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(63,42): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(63,42): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(63,42): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(63,42): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(63,42): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(67,80): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(67,80): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(67,80): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(67,80): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(67,80): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(67,49): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(67,49): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(67,49): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(67,49): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(67,49): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(75,62): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(75,62): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(75,62): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(75,62): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(75,62): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(75,49): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(75,49): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(75,49): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(75,49): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(75,49): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(79,80): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(79,80): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(79,80): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(79,80): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(79,80): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(79,49): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(79,49): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(79,49): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(79,49): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(79,49): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(87,62): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(87,62): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(87,62): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(87,62): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(87,62): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(87,42): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(87,42): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(87,42): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(87,42): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(87,42): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(91,80): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(91,80): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(91,80): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(91,80): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(91,80): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(91,49): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(91,49): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(91,49): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(91,49): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(91,49): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(99,62): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(99,62): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(99,62): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(99,62): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(99,62): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(99,49): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(99,49): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(99,49): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(99,49): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(99,49): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(103,80): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(103,80): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(103,80): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(103,80): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(103,80): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(103,49): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(103,49): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(103,49): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(103,49): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(103,49): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(121,59): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(121,59): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(121,59): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(121,59): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(121,59): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(121,39): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(121,39): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(121,39): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(121,39): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(121,39): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(125,59): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(125,59): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(125,59): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(125,59): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(125,59): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(125,46): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(125,46): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(125,46): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(125,46): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(125,46): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(129,59): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(129,59): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(129,59): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(129,59): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(129,59): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(129,39): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(129,39): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(129,39): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(129,39): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(129,39): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(133,59): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(133,59): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(133,59): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(133,59): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(133,59): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(133,46): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
-D:\C++\RPG\RPG_Proj\Game.cpp(133,46): warning C4244:         with
-D:\C++\RPG\RPG_Proj\Game.cpp(133,46): warning C4244:         [
-D:\C++\RPG\RPG_Proj\Game.cpp(133,46): warning C4244:             T=float
-D:\C++\RPG\RPG_Proj\Game.cpp(133,46): warning C4244:         ]
-D:\C++\RPG\RPG_Proj\Game.cpp(142,27): warning C4244: аргумент: преобразование "float" в "DWORD", возможна потеря данных
-  RPG_Proj.vcxproj -> D:\C++\RPG\RPG_Proj\x64\Debug\RPG_Proj.exe
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(14,56): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(14,44): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(19,55): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(19,43): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(24,57): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(24,45): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(91,63): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(91,43): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(95,81): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(95,50): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(103,63): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(103,50): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(107,81): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(107,50): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(115,63): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(115,43): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(119,81): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(119,50): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(127,63): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(127,50): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(131,81): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(131,50): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(202,59): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(202,39): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(206,59): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(206,46): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(210,59): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(210,39): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(214,59): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(214,46): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(223,27): warning C4244: аргумент: преобразование "float" в "DWORD", возможна потеря данных
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(273,62): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(273,42): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(277,62): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(277,49): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(281,62): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(281,42): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(285,62): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(285,49): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  RPG_Proj.cpp
+  Создание кода...
+C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\Game.cpp(288): warning C4715: Game::checkNearbyItems: значение возвращается не при всех путях выполнения
+  RPG_Proj.vcxproj -> C:\Users\Взрослая академия\Desktop\Nosachev_C++\RPG\RPG_Proj\x64\Debug\RPG_Proj.exe

@@ -1,8 +1,10 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+
 #include "Player.h"
 #include "Inventory.h"
 #include "Map.h"
+#include "SystemWindow.h"
 
 #include "Item.h"
 #include "Chest.h"
@@ -16,6 +18,7 @@ private:
 	Map map;
 	Inventory inventory;
 	Player player;
+	SystemWindow systemWindow;
 
 	vector<Item> items;
 
@@ -23,11 +26,17 @@ private:
 	int playerMoveDirection = 0;
 	const sf::Time TimePerFrame = sf::seconds(1.f / 10.f);
 
+	static bool flag;
+	static int value;
+	thread th;
+	void static incrementer();
+
 	void processEvents();
 	void update(sf::Time deltaTime);
 	void render();
-
 public:
 	Game();
+	~Game();
 	void run();
+	bool checkNearbyItems();
 };
