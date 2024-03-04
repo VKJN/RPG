@@ -68,6 +68,19 @@ void Game::processEvents() {
 		case sf::Event::KeyReleased:
 			if (event.key.scancode == sf::Keyboard::Scan::I) {
 				inventory.changeVisible();
+
+				// not work
+				/*if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
+					std::cout << "dasgfadsfhfdsgjfghkghkljjuk;";
+					sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
+					vector<Item> it = inventory.getItems();
+					for (int i = 0; i < it.size(); i++) {
+						if (it[i].getItem().getGlobalBounds().contains(float(mousePosition.x), float(mousePosition.y))) {
+							std::cout << "dasgfadsfhfdsgjfghkghkljjuk;";
+							inventory.removeItem(i);
+						}
+					}
+				}*/
 			}
 
 			// Проверка системного окна
@@ -138,7 +151,6 @@ void Game::processEvents() {
 					}
 					break;
 				}
-
 				/*sf::Vector2f pPos = player.getPosition();
 				switch (lastFaced) {
 				case 1:
@@ -200,25 +212,31 @@ void Game::update(sf::Time deltaTime) {
 
 	switch (playerMoveDirection) {
 	case 1:
-		if (map.getElementByPosition(pPos.x / 32, (pPos.y - 32) / 32) == 1)
+		if (map.getElementByPosition(pPos.x / 32, (pPos.y - 32) / 32) == 1 || map.getElementByPosition(pPos.x / 32, (pPos.y - 32) / 32) == 5)
 			player.move(1);
 		break;
 	case 2:
-		if (map.getElementByPosition((pPos.x + 32) / 32, pPos.y / 32) == 1)
+		if (map.getElementByPosition((pPos.x + 32) / 32, pPos.y / 32) == 1 || map.getElementByPosition((pPos.x + 32) / 32, pPos.y / 32) == 5)
 			player.move(2);
 		break;
 	case 3:
-		if (map.getElementByPosition(pPos.x / 32, (pPos.y + 32) / 32) == 1)
+		if (map.getElementByPosition(pPos.x / 32, (pPos.y + 32) / 32) == 1 || map.getElementByPosition(pPos.x / 32, (pPos.y + 32) / 32) == 5)
 			player.move(3);
 		break;
 	case 4:
-		if (map.getElementByPosition((pPos.x - 32) / 32, pPos.y / 32) == 1)
+		if (map.getElementByPosition((pPos.x - 32) / 32, pPos.y / 32) == 1 || map.getElementByPosition((pPos.x - 32) / 32, pPos.y / 32) == 5)
 			player.move(4);
 		break;
 	}
 
 	if (playerMoveDirection != 0) {
 		lastFaced = playerMoveDirection;
+	}
+
+	if (map.getElementByPosition(pPos.x / 32, pPos.y / 32) == 5 && player.getHp() > 0) {
+		if (value % 10 == 0) { 
+			player.removeHp(5); 
+		}
 	}
 
 	Sleep(deltaTime.asSeconds());

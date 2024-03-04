@@ -10,4 +10,6 @@ public:
 	sf::Vector2f getPosition();
 	void draw(sf::RenderWindow& window);
 	void setPosition(sf::Vector2f newPosition);
+
+	sf::RectangleShape getItem();
 };

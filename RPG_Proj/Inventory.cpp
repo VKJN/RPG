@@ -44,7 +44,7 @@ void Inventory::addItem(Item item) {
 }
 
 void Inventory::removeItem(int index) {
-
+	items.erase(items.begin() + index);
 }
 
 int Inventory::getCountItems() {
@@ -53,4 +53,8 @@ int Inventory::getCountItems() {
 
 int Inventory::getSlotCount() {
 	return slotCount;
+}
+
+vector<Item> Inventory::getItems() {
+	return items;
 }

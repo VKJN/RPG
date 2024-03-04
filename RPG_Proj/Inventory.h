@@ -27,4 +27,6 @@ public:
 
 	int getCountItems();
 	int getSlotCount();
+
+	vector<Item> getItems();
 };

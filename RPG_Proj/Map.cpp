@@ -8,10 +8,24 @@ Map::Map(int width, int height)
 	if (!texture->loadFromFile("./image/map.png")) std::cout << "texture not load";
 
 	backgroundTile.setTexture(texture);
+
+	sf::Color color;
+
 	for (int i = 0; i < 20; i++) {
 		for (int j = 0; j < 30; j++) {
 			maskTiles[i][j].setSize(sf::Vector2f(32, 32));
-			maskTiles[i][j].setFillColor(sf::Color((mask[i][j] == 1) ? sf::Color(0, 255, 0, 0) : sf::Color(0, 0, 255, 0)));
+			switch (mask[i][j]) {
+			case 1:
+				color = sf::Color(0, 255, 0, 0);
+				break;
+			case 5:
+				color = sf::Color(100, 100, 75, 255);
+				break;
+			default:
+				color = sf::Color(0, 0, 255, 0);
+				break;
+			}
+			maskTiles[i][j].setFillColor(color);
 			maskTiles[i][j].setPosition(sf::Vector2f(j * 32, i * 32));
 		}
 	}

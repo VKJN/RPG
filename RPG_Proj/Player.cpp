@@ -31,8 +31,21 @@ void Player::move(int direction) {
 
 void Player::draw(sf::RenderWindow& window) {
 	window.draw(player);
+	stats.draw(window);
 }
 
 sf::Vector2f Player::getPosition() {
 	return player.getPosition();
+}
+
+void Player::addHp(int hp) {
+	stats.setHealth(stats.getHealth() + hp);
+}
+
+void Player::removeHp(int hp) {
+	stats.setHealth(stats.getHealth() - hp);
+}
+
+int Player::getHp() {
+	return stats.getHealth();
 }

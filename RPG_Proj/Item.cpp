@@ -16,3 +16,7 @@ void Item::draw(sf::RenderWindow& window) {
 void Item::setPosition(sf::Vector2f newPosition) {
 	item.setPosition(newPosition);
 }
+
+sf::RectangleShape Item::getItem() {
+	return item;
+}

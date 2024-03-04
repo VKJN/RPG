@@ -134,6 +134,7 @@
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerStats.cpp" />
     <ClCompile Include="Potion.cpp" />
     <ClCompile Include="RPG_Proj.cpp" />
     <ClCompile Include="SystemWindow.cpp" />
@@ -149,6 +150,7 @@
     <ClInclude Include="Item.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerStats.h" />
     <ClInclude Include="Potion.h" />
     <ClInclude Include="SystemWindow.h" />
   </ItemGroup>
