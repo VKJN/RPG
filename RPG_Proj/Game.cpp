@@ -16,11 +16,6 @@ Game::Game()
 
 	coords = map.getArrayCoordsByNum(3);
 	for (auto el : coords) {
-		items.push_back(Coin(sf::Vector2f(el[1] * 32, el[0] * 32)));
-	}
-
-	coords = map.getArrayCoordsByNum(4);
-	for (auto el : coords) {
 		items.push_back(Potion(sf::Vector2f(el[1] * 32, el[0] * 32)));
 	}
 }
@@ -64,23 +59,21 @@ void Game::processEvents() {
 			playerMoveDirection = 0;
 		}
 
+		if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left && inventory.getVisible()) {
+			sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
+			vector<Item> it = inventory.getItems();
+			for (int i = 0; i < it.size(); i++) {
+				if (it[i].getItem().getGlobalBounds().contains(float(mousePosition.x), float(mousePosition.y)) && it[i].getIndex() == 2) {
+					inventory.removeItem(i);
+					player.addHp(20); /* Из-за того, что у нас вектор Item, мы не можем вызвать метод getHealAmount у Potion, поэтому просто 20 */
+				}
+			}
+		}
+
 		switch (event.type) {
 		case sf::Event::KeyReleased:
 			if (event.key.scancode == sf::Keyboard::Scan::I) {
 				inventory.changeVisible();
-
-				// not work
-				/*if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
-					std::cout << "dasgfadsfhfdsgjfghkghkljjuk;";
-					sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
-					vector<Item> it = inventory.getItems();
-					for (int i = 0; i < it.size(); i++) {
-						if (it[i].getItem().getGlobalBounds().contains(float(mousePosition.x), float(mousePosition.y))) {
-							std::cout << "dasgfadsfhfdsgjfghkghkljjuk;";
-							inventory.removeItem(i);
-						}
-					}
-				}*/
 			}
 
 			// Проверка системного окна

@@ -39,9 +39,6 @@
     <ClCompile Include="Potion.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Coin.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="SystemWindow.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -72,9 +69,6 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Potion.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Coin.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="SystemWindow.h">

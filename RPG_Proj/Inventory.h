@@ -29,4 +29,5 @@ public:
 	int getSlotCount();
 
 	vector<Item> getItems();
+	bool getVisible();
 };

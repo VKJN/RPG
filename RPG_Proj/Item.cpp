@@ -1,8 +1,9 @@
 #include "Item.h"
 
-Item::Item(sf::Vector2f startPosition) {
+Item::Item(sf::Vector2f startPosition, int index) {
 	item.setPosition(startPosition);
 	item.setSize(sf::Vector2f(32.f, 32.f));
+	this->index = index;
 }
 
 sf::Vector2f Item::getPosition() {
@@ -19,4 +20,8 @@ void Item::setPosition(sf::Vector2f newPosition) {
 
 sf::RectangleShape Item::getItem() {
 	return item;
+}
+
+int Item::getIndex() {
+	return index;
 }

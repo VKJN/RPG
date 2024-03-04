@@ -7,4 +7,5 @@ private:
 	int healAmount = 20;
 public:
 	Potion(sf::Vector2f startPosition);
+	int getHealAmount();
 };

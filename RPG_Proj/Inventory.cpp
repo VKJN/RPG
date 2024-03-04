@@ -58,3 +58,7 @@ int Inventory::getSlotCount() {
 vector<Item> Inventory::getItems() {
 	return items;
 }
+
+bool Inventory::getVisible() {
+	return visible;
+}
